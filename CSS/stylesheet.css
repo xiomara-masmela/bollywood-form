@@ -1,0 +1,101 @@
+* {
+  box-sizing:border-box;
+}
+
+html,
+body {
+ height: 100%;
+ position: relative;
+}
+
+.container{
+  margin: auto;
+  padding: 50px;
+  width: 80vh;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  background-color: #EF4B4C;
+}
+
+form{
+  height: 80%;
+  margin:auto;
+}
+
+.userinfo{
+  order:1;
+  margin: 20px auto;
+}
+
+.nextbutton{
+  order:2;
+  margin: 20px auto
+}
+
+.select{
+order:3;
+margin: 20px auto
+}
+
+.submitbutton{
+  order: 4;
+  margin: 20px auto
+}
+
+.footer{
+  order: 5;
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  margin: auto;
+
+}
+
+label, select, input {
+  margin: 6px 6px;
+  height: 30px;
+
+}
+
+select,input {
+  border-radius: 30px;
+  border-color: black;
+  width: 70%;
+}
+
+button{
+  border-radius: 30%;
+  border-color: black;
+  background-color: #3D619B;
+  color: white;
+}
+
+#selectStep {
+  display: none;
+}
+
+/******MEDIA QUERIES *****/
+@media only screen and (max-width:600px){
+  .footer{
+    display: none;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+    width: 100vh;
+    height: 100vh;
+  }
+  .form{
+    height: auto;
+  }
+  label, select, input {
+    margin: 1px 1px;
+    height: 20px;
+
+  }
+
+
+}
